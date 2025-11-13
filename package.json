@@ -1,9 +1,9 @@
 {
-  "name": "landing-imersao-ie",
+  "name": "imersao-ie",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://SEU-USUARIO.github.io/landing-imersao-ie",
+  "homepage": "https://geraldoluizbatista.github.io/imersao-ie/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
