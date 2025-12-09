@@ -201,7 +201,7 @@ const Hero = () => {
               
               <div className="relative w-full h-full flex items-center justify-center">
                 
-                {/* FOTO 1 - Profissional Mulher (Esquerda) */}
+                profissional-mulher.jpg
                 <div className="absolute left-0 z-10">
                   <div className="relative">
                     <div className="w-48 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-4 border-purple-500/30 shadow-2xl flex items-center justify-center overflow-hidden">
@@ -227,7 +227,7 @@ const Hero = () => {
                 <div className="absolute right-0 z-20">
                   <div className="relative">
                     <div className="w-48 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-4 border-blue-500/30 shadow-2xl flex items-center justify-center overflow-hidden">
-                      {/* ADICIONE A IMAGEM AQUI: */}
+                      profissional-homem.jpg
                       {/* <img src="/images/profissional-homem.jpg" alt="Empreendedor Tech" className="w-full h-full object-cover" /> */}
                       <div className="text-center p-4">
                         <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
