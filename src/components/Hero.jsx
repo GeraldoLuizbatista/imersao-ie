@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock } from 'lucide-react';
+import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock, Target, Users, TrendingUp } from 'lucide-react';
 
 const Hero = () => {
   const scrollToPricing = () => {
@@ -21,10 +21,28 @@ const Hero = () => {
       <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-red-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        
+        {/* Top Badge - NOVO! */}
+        <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 backdrop-blur-sm px-6 py-3 rounded-full mb-6">
+          <Target className="w-5 h-5 text-purple-400" />
+          <span className="text-white font-bold text-sm uppercase tracking-wider">
+            Imersão Presencial
+          </span>
+          <div className="w-px h-4 bg-purple-500/30"></div>
+          <span className="text-purple-300 text-sm">1 Dia Intensivo</span>
+        </div>
+
         {/* Alert Badge */}
-        <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse">
+        <div className="inline-flex items-center gap-2 bg-red-600/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse">
           <AlertTriangle className="w-4 h-4" />
           <span>Sua empresa tem data de validade</span>
+        </div>
+
+        {/* Title + Subtitle - MELHORADO! */}
+        <div className="mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-300 mb-4 tracking-wide">
+            IMERSÃO IE - INTELIGÊNCIA EXPONENCIAL
+          </h2>
         </div>
 
         {/* Main Headline */}
@@ -38,7 +56,7 @@ const Hero = () => {
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto font-light">
+        <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-4xl mx-auto font-light">
           Ou será quem substitui <span className="text-red-400 font-bold">usando IA</span>?
         </p>
 
@@ -53,25 +71,46 @@ const Hero = () => {
           </span>
         </div>
 
-        <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
-          <span className="text-white font-semibold">Inteligência Humana</span> + 
-          <span className="text-white font-semibold"> Inteligência Artificial</span> = 
-          <span className="text-yellow-400 font-bold"> Inteligência Exponencial</span>
-        </p>
+        {/* Value Proposition - NOVO! */}
+        <div className="bg-black/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-white font-semibold mb-4">
+            Aprenda a criar <span className="text-yellow-400">Agentes e Assistentes de IA</span>
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4 text-gray-300">
+            <div className="flex items-center gap-2">
+              <Zap className="w-5 h-5 text-yellow-400" />
+              <span>Em 1 dia</span>
+            </div>
+            <div className="w-px h-4 bg-gray-600"></div>
+            <div className="flex items-center gap-2">
+              <Users className="w-5 h-5 text-blue-400" />
+              <span>Sem programação</span>
+            </div>
+            <div className="w-px h-4 bg-gray-600"></div>
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-5 h-5 text-green-400" />
+              <span>Resultados práticos</span>
+            </div>
+          </div>
+        </div>
 
-        {/* Event Details */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-12 text-gray-300">
-          <div className="flex items-center gap-2">
-            <Calendar className="w-5 h-5 text-red-500" />
-            <span>[DATA DO EVENTO]</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Clock className="w-5 h-5 text-red-500" />
-            <span>8h30 às 18h00</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="w-5 h-5 text-red-500" />
-            <span>[LOCAL]</span>
+        {/* Event Details - DESTAQUE MAIOR! */}
+        <div className="bg-gradient-to-r from-red-900/40 to-orange-900/40 backdrop-blur-sm border-2 border-red-500/30 rounded-2xl p-6 max-w-4xl mx-auto mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-white">
+            <div className="flex items-center gap-2">
+              <Calendar className="w-6 h-6 text-red-400" />
+              <span className="font-bold text-lg">[DATA DO EVENTO]</span>
+            </div>
+            <div className="hidden md:block w-px h-8 bg-red-500/30"></div>
+            <div className="flex items-center gap-2">
+              <Clock className="w-6 h-6 text-red-400" />
+              <span className="font-bold text-lg">8h30 às 18h00</span>
+            </div>
+            <div className="hidden md:block w-px h-8 bg-red-500/30"></div>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-6 h-6 text-red-400" />
+              <span className="font-bold text-lg">[LOCAL]</span>
+            </div>
           </div>
         </div>
 
@@ -79,45 +118,43 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <button 
             onClick={scrollToPricing}
-            className="group relative px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white text-lg font-bold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/50 w-full sm:w-auto"
+            className="group relative px-8 py-5 bg-gradient-to-r from-red-600 to-red-700 text-white text-xl font-black rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/50 w-full sm:w-auto"
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              GARANTA SUA VAGA - 50% OFF
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              GARANTIR MINHA VAGA - 50% OFF
+              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-red-800 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </button>
         </div>
 
         {/* Urgency Text */}
-        <div className="flex items-center justify-center gap-2 text-yellow-400 animate-pulse">
+        <div className="flex items-center justify-center gap-2 text-yellow-400 animate-pulse mb-8">
           <Zap className="w-5 h-5" />
           <span className="text-sm font-semibold">Restam apenas [X] vagas</span>
         </div>
 
-        {/* Scarcity Counter */}
-        <div className="mt-8 inline-block">
-          <div className="bg-gray-900/50 backdrop-blur-sm border border-red-500/30 rounded-lg px-6 py-3">
-            <p className="text-sm text-gray-400 mb-1">Inscritos nas últimas 24h:</p>
-            <p className="text-3xl font-bold text-red-500">+127</p>
+        {/* Social Proof Badges - NOVO! */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-2">
+            <p className="text-xs text-gray-400 mb-1">Criado por:</p>
+            <p className="text-sm font-bold text-white">30+ Negócios</p>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-2">
+            <p className="text-xs text-gray-400 mb-1">Tech Partner:</p>
+            <p className="text-sm font-bold text-white">Oracle & Nvidia</p>
+          </div>
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-2">
+            <p className="text-xs text-gray-400 mb-1">Economia de:</p>
+            <p className="text-sm font-bold text-green-400">80% Operacional</p>
           </div>
         </div>
 
-        {/* Social Proof */}
-        <div className="mt-12 flex items-center justify-center gap-8 flex-wrap">
-          <div className="text-center">
-            <p className="text-3xl font-bold text-white">30+</p>
-            <p className="text-sm text-gray-400">Negócios Criados</p>
-          </div>
-          <div className="h-12 w-px bg-gray-700"></div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-white">80%</p>
-            <p className="text-sm text-gray-400">Redução Operacional</p>
-          </div>
-          <div className="h-12 w-px bg-gray-700"></div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-white">24/7</p>
-            <p className="text-sm text-gray-400">Agentes Trabalhando</p>
+        {/* Scarcity Counter */}
+        <div className="inline-block">
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-red-500/30 rounded-lg px-6 py-3">
+            <p className="text-sm text-gray-400 mb-1">Inscritos nas últimas 24h:</p>
+            <p className="text-3xl font-bold text-red-500">+127</p>
           </div>
         </div>
       </div>
@@ -133,3 +170,82 @@ const Hero = () => {
 };
 
 export default Hero;
+```
+
+---
+
+### **4. FAZER COMMIT**
+
+1. Role até o final da página
+2. Em "Commit changes":
+   - **Message:** `Melhoria: Hero com contexto de Imersão`
+   - **Description:** `Adiciona badge de Imersão Presencial, melhora clareza sobre o formato e mantém gancho forte`
+3. Clique em **"Commit changes"**
+
+---
+
+### **5. AGUARDAR DEPLOY**
+
+1. Vá para **Actions**: https://github.com/geraldoluizbatista/imersao-ie/actions
+2. Aguarde o workflow rodar (2-3 minutos)
+3. Quando ficar verde ✅, teste em aba anônima
+
+---
+
+## 🎯 **O QUE MUDOU (Principais Melhorias):**
+
+### ✨ **ADIÇÕES:**
+
+1. **Badge "IMERSÃO PRESENCIAL"** no topo
+   - Deixa claro o formato
+   - Design estilo StartSe
+   - Ícone de Target
+
+2. **Título "IMERSÃO IE"** antes do gancho
+   - Contexto imediato
+   - Branding claro
+
+3. **Box com Value Proposition**
+   - "Aprenda a criar Agentes e Assistentes de IA"
+   - 3 benefícios com ícones (1 dia, Sem programação, Resultados)
+   - Visual destacado
+
+4. **Event Details mais visível**
+   - Box com fundo colorido
+   - Ícones maiores
+   - Fonte maior (text-lg)
+   - Bordas destacadas
+
+5. **Social Proof Badges**
+   - "30+ Negócios"
+   - "Oracle & Nvidia"
+   - "80% Economia"
+
+### 🎨 **VISUAL:**
+```
+┌─────────────────────────────────────────────┐
+│  🎯 IMERSÃO PRESENCIAL | 1 Dia Intensivo   │
+├─────────────────────────────────────────────┤
+│  ⚠️ Sua empresa tem data de validade        │
+├─────────────────────────────────────────────┤
+│                                             │
+│     IMERSÃO IE - INTELIGÊNCIA EXPONENCIAL   │
+│                                             │
+│     VOCÊ SERÁ SUBSTITUÍDO PELA IA?          │
+│     Ou será quem substitui usando IA?      │
+│                                             │
+│            IH + IA = IE                     │
+│                                             │
+├─────────────────────────────────────────────┤
+│  Aprenda a criar Agentes e Assistentes     │
+│  ⚡ Em 1 dia | 👥 Sem programação | 📈      │
+├─────────────────────────────────────────────┤
+│  📅 [DATA] | ⏰ 8h30-18h | 📍 [LOCAL]       │
+├─────────────────────────────────────────────┤
+│                                             │
+│    [GARANTIR MINHA VAGA - 50% OFF] →       │
+│                                             │
+│    ⚡ Restam apenas [X] vagas               │
+│                                             │
+│  [30+ Negócios] [Oracle & Nvidia] [80%]    │
+└─────────────────────────────────────────────┘
