@@ -1,201 +1,194 @@
 import React from 'react';
-import { Briefcase, Award, TrendingUp, Cpu, Users, Building } from 'lucide-react';
+import { Briefcase, Brain, Award, TrendingUp, Users, Zap, Building2 } from 'lucide-react';
 
 const Instructors = () => {
   return (
-    <section id="instructors" className="py-20 bg-gradient-to-b from-gray-900 to-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+        }}></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Título da Seção */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-blue-500/10 border border-blue-500/30 rounded-full px-6 py-2 mb-6">
-            <span className="text-blue-400 font-semibold text-sm uppercase tracking-wider">
-              Seus Mentores
+          <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 rounded-full px-4 py-2 mb-4">
+            <Award className="w-5 h-5 text-red-400" />
+            <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">
+              Quem Vai Te Ensinar
             </span>
           </div>
-          
-          <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-            Quem Vai Te <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Transformar</span>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+            Instrutores <span className="text-red-500">Empreendedores</span>
           </h2>
-          
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Aprenda com quem faz acontecer no mercado real, não apenas na teoria
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            Aprenda com quem realmente usa IA para <span className="text-white font-semibold">criar e escalar negócios</span> no dia a dia
           </p>
         </div>
 
-        {/* Geraldo Card */}
-        <div className="mb-12 bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-700 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02]">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Left Side - Image */}
-            <div className="relative h-[400px] md:h-auto bg-gradient-to-br from-blue-600 to-purple-700">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-48 h-48 bg-gray-800 rounded-full flex items-center justify-center">
-                  <Users className="w-24 h-24 text-blue-400" />
+        {/* Grid de Instrutores */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          
+          {/* ==================== GERALDO OLIVEIRA ==================== */}
+          <div className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
+            
+            {/* Foto do Instrutor */}
+            <div className="relative mb-6">
+              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 border-4 border-red-500/30 overflow-hidden shadow-2xl group-hover:border-red-500/50 transition-all">
+                {/* ADICIONE A FOTO AQUI: */}
+                {/* <img src="/images/geraldo.jpg" alt="Geraldo Oliveira" className="w-full h-full object-cover" /> */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <Briefcase className="w-16 h-16 text-red-400" />
                 </div>
               </div>
-              {/* Replace with actual image */}
-              <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <p className="text-white font-bold text-sm">GERALDO OLIVEIRA</p>
+              
+              {/* Badge de destaque */}
+              <div className="absolute -top-2 -right-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                <Award className="w-3 h-3 inline mr-1" />
+                30+ Negócios
               </div>
             </div>
 
-            {/* Right Side - Content */}
-            <div className="p-8 md:p-12">
-              <h3 className="text-3xl md:text-4xl font-black text-white mb-2">
-                Geraldo Oliveira
-              </h3>
-              <p className="text-xl text-blue-400 font-bold mb-6">
-                Empreendedor Serial | 30+ Negócios Criados
+            {/* Informações */}
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-white mb-2">Geraldo Oliveira</h3>
+              <p className="text-red-400 font-semibold mb-3">Serial Entrepreneur & Instrutor</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Criador de mais de 30 negócios, especialista em estratégias de crescimento com IA. 
+                Mentor de empreendedores que querem escalar rapidamente usando tecnologia.
               </p>
+            </div>
 
-              {/* Quote */}
-              <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
-                <p className="text-lg text-gray-200 italic leading-relaxed">
-                  "Nos meus 30 negócios, aprendi uma verdade brutal: Empresas que não evoluem não fecham devagar - elas simplesmente desaparecem. E o mesmo vale para profissionais."
-                </p>
-              </div>
-
-              {/* Experience Tags */}
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <Briefcase className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-white font-semibold">30+ negócios criados</p>
-                    <p className="text-gray-400 text-sm">Em diferentes mercados e setores</p>
-                  </div>
+            {/* Conquistas */}
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center">
+                  <Building2 className="w-4 h-4 text-red-400" />
                 </div>
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-white font-semibold">15+ anos de experiência</p>
-                    <p className="text-gray-400 text-sm">Gerando R$ 15 milhões anuais</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Award className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-white font-semibold">Especialista em Adaptação</p>
-                    <p className="text-gray-400 text-sm">Sobreviveu e venceu 3 crises econômicas</p>
-                  </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Fundador Tucont AI</p>
+                  <p className="text-gray-400 text-xs">Soluções empresariais com IA</p>
                 </div>
               </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center">
+                  <Users className="w-4 h-4 text-red-400" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Jornada Empreendedora</p>
+                  <p className="text-gray-400 text-xs">Formou 500+ empreendedores</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center">
+                  <TrendingUp className="w-4 h-4 text-red-400" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Resultados Comprovados</p>
+                  <p className="text-gray-400 text-xs">80% redução operacional com IA</p>
+                </div>
+              </div>
+            </div>
 
-              {/* What You'll Learn */}
-              <div className="bg-black/30 rounded-xl p-6">
-                <p className="text-sm text-gray-400 uppercase tracking-wider mb-3 font-semibold">
-                  Ele vai te ensinar:
-                </p>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                    Como não se tornar obsoleto
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                    Por que a gerência média está desaparecendo
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                    Estratégias de adaptação que funcionam
-                  </li>
-                </ul>
+            {/* Especialidades */}
+            <div className="mt-6 pt-6 border-t border-gray-700/50">
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Especialidades:</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-red-500/10 text-red-400 text-xs px-3 py-1 rounded-full">Estratégias de Negócio</span>
+                <span className="bg-red-500/10 text-red-400 text-xs px-3 py-1 rounded-full">Growth Hacking</span>
+                <span className="bg-red-500/10 text-red-400 text-xs px-3 py-1 rounded-full">IA para Vendas</span>
+              </div>
+            </div>
+          </div>
+
+          {/* ==================== DIEGO ==================== */}
+          <div className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:scale-105">
+            
+            {/* Foto do Instrutor */}
+            <div className="relative mb-6">
+              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border-4 border-blue-500/30 overflow-hidden shadow-2xl group-hover:border-blue-500/50 transition-all">
+                {/* ADICIONE A FOTO AQUI: */}
+                {/* <img src="/images/diego.jpg" alt="Diego" className="w-full h-full object-cover" /> */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <Brain className="w-16 h-16 text-blue-400" />
+                </div>
+              </div>
+              
+              {/* Badge de destaque */}
+              <div className="absolute -top-2 -right-2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                <Zap className="w-3 h-3 inline mr-1" />
+                CTO Biofy
+              </div>
+            </div>
+
+            {/* Informações */}
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-white mb-2">Diego</h3>
+              <p className="text-blue-400 font-semibold mb-3">CTO & Instrutor Técnico</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Chief Technology Officer da Biofy, especialista em implementação de IA em empresas. 
+                Transforma conceitos complexos em soluções práticas e aplicáveis.
+              </p>
+            </div>
+
+            {/* Conquistas */}
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                  <Building2 className="w-4 h-4 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">CTO Biofy</p>
+                  <p className="text-gray-400 text-xs">Liderando transformação digital</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                  <Award className="w-4 h-4 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Parceiro Oracle & Nvidia</p>
+                  <p className="text-gray-400 text-xs">Certificado em IA empresarial</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                  <Brain className="w-4 h-4 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Agentes IA Autônomos</p>
+                  <p className="text-gray-400 text-xs">Cria soluções sem código</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Especialidades */}
+            <div className="mt-6 pt-6 border-t border-gray-700/50">
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Especialidades:</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full">IA Generativa</span>
+                <span className="bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full">Agentes Autônomos</span>
+                <span className="bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full">Automação</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Diego Card */}
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-700 rounded-3xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:scale-[1.02]">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Left Side - Image */}
-            <div className="relative h-[400px] md:h-auto bg-gradient-to-br from-purple-600 to-pink-700 md:order-2">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-48 h-48 bg-gray-800 rounded-full flex items-center justify-center">
-                  <Cpu className="w-24 h-24 text-purple-400" />
-                </div>
-              </div>
-              {/* Replace with actual image */}
-              <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <p className="text-white font-bold text-sm">DIEGO</p>
-              </div>
-            </div>
-
-            {/* Right Side - Content */}
-            <div className="p-8 md:p-12 md:order-1">
-              <h3 className="text-3xl md:text-4xl font-black text-white mb-2">
-                Diego
-              </h3>
-              <p className="text-xl text-purple-400 font-bold mb-6">
-                CTO Biofy | Mestrando IA | Parceiro Oracle & Nvidia
-              </p>
-
-              {/* Quote */}
-              <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border-l-4 border-purple-500 p-6 rounded-r-lg mb-8">
-                <p className="text-lg text-gray-200 italic leading-relaxed">
-                  "Na Biofy, reduzimos 80% do trabalho operacional com agentes. Não demitimos ninguém - promovemos todos para funções estratégicas."
-                </p>
-              </div>
-
-              {/* Experience Tags */}
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <Building className="w-6 h-6 text-purple-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-white font-semibold">CTO da Biofy</p>
-                    <p className="text-gray-400 text-sm">Parceira destaque Oracle e Nvidia</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Award className="w-6 h-6 text-purple-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-white font-semibold">Mestrando em IA</p>
-                    <p className="text-gray-400 text-sm">Academia + Mercado = Excelência</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Cpu className="w-6 h-6 text-purple-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-white font-semibold">Sócio Iuptec</p>
-                    <p className="text-gray-400 text-sm">Criador de softwares corporativos</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* What You'll Learn */}
-              <div className="bg-black/30 rounded-xl p-6">
-                <p className="text-sm text-gray-400 uppercase tracking-wider mb-3 font-semibold">
-                  Ele vai te ensinar:
-                </p>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
-                    Construir agentes do zero (sem programar)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
-                    Criar assistentes personalizados
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
-                    Cases reais Oracle, Nvidia e Biofy
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Combined Strength */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-r from-blue-900/30 to-purple-900/30 border-2 border-blue-500/30 rounded-2xl px-8 py-6 max-w-3xl">
-            <p className="text-2xl text-white font-bold mb-4">
-              🚀 A Combinação Perfeita
-            </p>
-            <p className="text-lg text-gray-300">
-              <span className="text-blue-400 font-bold">Geraldo</span> traz visão estratégica e experiência empresarial.
-              <br />
-              <span className="text-purple-400 font-bold">Diego</span> traz domínio técnico e casos reais.
-              <br />
-              <span className="text-white font-bold">Você</span> recebe o melhor dos dois mundos.
-            </p>
+        {/* CTA Adicional */}
+        <div className="mt-12 text-center">
+          <p className="text-gray-400 text-sm mb-4">
+            Aprenda diretamente com quem <span className="text-white font-semibold">usa IA para criar resultados reais</span> em empresas e negócios
+          </p>
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600/20 to-blue-600/20 border border-gray-700 rounded-lg px-6 py-3">
+            <Users className="w-5 h-5 text-red-400" />
+            <span className="text-white font-semibold">Método prático e testado em 30+ negócios</span>
           </div>
         </div>
       </div>
