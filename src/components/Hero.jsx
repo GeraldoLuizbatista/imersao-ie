@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock, Target, Users, TrendingUp, Briefcase, Sparkles, Rocket } from 'lucide-react';
+import imgMulher from '/images/profissional-mulher.jpg';
+import imgHomem from '/images/profissional-homem.jpg';
 
 const Hero = () => {
   const scrollToPricing = () => {
@@ -190,7 +192,7 @@ const Hero = () => {
                   <div className="relative">
                     <div className="w-48 h-64 rounded-2xl border-4 border-purple-500/30 shadow-2xl overflow-hidden bg-gray-900">
                       <img 
-                        src="imersao-ie/images/profissional-mulher.jpg" 
+                        src={imgMulher}
                         alt="Profissional Executiva" 
                         className="w-full h-full object-cover"
                       />
@@ -206,7 +208,7 @@ const Hero = () => {
                   <div className="relative">
                     <div className="w-48 h-64 rounded-2xl border-4 border-blue-500/30 shadow-2xl overflow-hidden bg-gray-900">
                       <img 
-                        src="imersao-ie/images/profissional-homem.jpg" 
+                        src={imgHomem}
                         alt="Empreendedor Tech" 
                         className="w-full h-full object-cover"
                       />
