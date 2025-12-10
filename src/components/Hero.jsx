@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock, Target, Users, TrendingUp, Briefcase, Sparkles, Brain, Rocket, User } from 'lucide-react';
+import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock, Target, Users, TrendingUp, Briefcase, Sparkles, Rocket } from 'lucide-react';
 
 const Hero = () => {
   const scrollToPricing = () => {
     document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Timer regressivo até 10/01/2026
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -34,28 +33,22 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-red-950">
-      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
         }}></div>
       </div>
 
-      {/* Animated Gradient Orbs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
       <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
       <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-red-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
 
-      {/* Container Principal */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        {/* Grid Layout */}
         <div className="grid lg:grid-cols-5 gap-8 items-start">
           
-          {/* ==================== COLUNA ESQUERDA (3/5) ==================== */}
           <div className="lg:col-span-3 space-y-6">
             
-            {/* Badge Urgência + Timer */}
             <div className="space-y-4">
               <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-600/30 to-orange-600/30 border-2 border-red-500/50 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg shadow-red-500/20 animate-pulse">
                 <AlertTriangle className="w-5 h-5 text-red-400" />
@@ -64,7 +57,6 @@ const Hero = () => {
                 </span>
               </div>
 
-              {/* Contador Regressivo */}
               <div className="flex items-center gap-3 bg-black/50 backdrop-blur-sm border border-red-500/30 rounded-lg px-4 py-3 inline-flex">
                 <Clock className="w-5 h-5 text-red-400" />
                 <span className="text-white text-sm font-semibold">Evento em:</span>
@@ -87,7 +79,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Headline Principal */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-4">
                 <span className="bg-gradient-to-r from-white via-red-200 to-red-400 bg-clip-text text-transparent">
@@ -101,7 +92,6 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Fórmula IE */}
             <div className="flex items-center gap-4 text-2xl md:text-3xl font-bold">
               <span className="text-gray-400">IH</span>
               <span className="text-red-500">+</span>
@@ -112,7 +102,6 @@ const Hero = () => {
               </span>
             </div>
 
-            {/* Value Proposition */}
             <div className="bg-black/40 backdrop-blur-sm border border-gray-700/50 rounded-xl p-4">
               <p className="text-lg text-white font-semibold mb-2">
                 Aprenda a criar <span className="text-yellow-400">Agentes e Assistentes de IA</span>
@@ -133,7 +122,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* CTA PRINCIPAL */}
             <div className="space-y-3">
               <button 
                 onClick={scrollToPricing}
@@ -152,7 +140,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Info Evento */}
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 backdrop-blur-sm border border-red-500/20 rounded-lg p-4">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
                 <div className="flex items-center gap-2">
@@ -170,7 +157,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Público-alvo + Organização */}
             <div className="space-y-3 pt-4 border-t border-gray-800">
               <div className="flex flex-wrap items-center gap-2">
                 <div className="flex items-center gap-2 bg-purple-900/30 border border-purple-500/30 rounded-lg px-3 py-1.5">
@@ -195,26 +181,21 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* ==================== COLUNA DIREITA (2/5) ==================== */}
+          {/* FOTOS - DESCOMENTADAS E FUNCIONANDO */}
           <div className="lg:col-span-2 hidden lg:block">
             <div className="relative h-[600px] flex items-center justify-center">
               
               <div className="relative w-full h-full flex items-center justify-center">
                 
-                profissional-mulher.jpg
+                {/* Foto Mulher Executiva */}
                 <div className="absolute left-0 z-10">
                   <div className="relative">
-                    <div className="w-48 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-4 border-purple-500/30 shadow-2xl flex items-center justify-center overflow-hidden">
-                      {/* ADICIONE A IMAGEM AQUI: */}
-                      {/* <img src="/images/profissional-mulher.jpg" alt="Profissional Executiva" className="w-full h-full object-cover" /> */}
-                      <div className="text-center p-4">
-                        <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <User className="w-6 h-6 text-purple-400" />
-                        </div>
-                        <p className="text-white font-bold text-base mb-1">Profissional Executiva</p>
-                        <p className="text-gray-400 text-xs">CLT em Multinacional</p>
-                        <p className="text-gray-400 text-xs">Gestora de Projetos</p>
-                      </div>
+                    <div className="w-48 h-64 rounded-2xl border-4 border-purple-500/30 shadow-2xl overflow-hidden bg-gray-900">
+                      <img 
+                        src="/images/profissional-mulher.jpg" 
+                        alt="Profissional Executiva" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="absolute -top-3 -right-3 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
                       <Sparkles className="w-3 h-3 inline mr-1" />
@@ -223,20 +204,15 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* FOTO 2 - Profissional Homem (Direita) */}
+                {/* Foto Homem Empreendedor */}
                 <div className="absolute right-0 z-20">
                   <div className="relative">
-                    <div className="w-48 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-4 border-blue-500/30 shadow-2xl flex items-center justify-center overflow-hidden">
-                      profissional-homem.jpg
-                      {/* <img src="/images/profissional-homem.jpg" alt="Empreendedor Tech" className="w-full h-full object-cover" /> */}
-                      <div className="text-center p-4">
-                        <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <Rocket className="w-6 h-6 text-blue-400" />
-                        </div>
-                        <p className="text-white font-bold text-base mb-1">Empreendedor Tech</p>
-                        <p className="text-gray-400 text-xs">Fundador de Startup</p>
-                        <p className="text-gray-400 text-xs">Escalando com IA</p>
-                      </div>
+                    <div className="w-48 h-64 rounded-2xl border-4 border-blue-500/30 shadow-2xl overflow-hidden bg-gray-900">
+                      <img 
+                        src="/images/profissional-homem.jpg" 
+                        alt="Empreendedor Tech" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="absolute -top-3 -left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce animation-delay-2000">
                       <Rocket className="w-3 h-3 inline mr-1" />
@@ -245,7 +221,6 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* Badges flutuantes */}
                 <div className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce animation-delay-4000">
                   <Zap className="w-3 h-3 inline mr-1" />
                   IA Generativa
@@ -256,14 +231,12 @@ const Hero = () => {
                   80% Eficiente
                 </div>
 
-                {/* Efeito luz */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Social Proof */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2">
             <p className="text-xs text-gray-400">Experiência:</p>
@@ -284,7 +257,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-red-500 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-red-500 rounded-full animate-scroll"></div>
@@ -294,4 +266,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero;git add src/components/Hero.jsx
