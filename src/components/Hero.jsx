@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock, Target, Users, TrendingUp, Briefcase, Sparkles, Rocket } from 'lucide-react';
+import { ArrowRight, AlertTriangle, Zap, Calendar, MapPin, Clock, Target, Users, TrendingUp, Briefcase, Sparkles, Rocket, Brain } from 'lucide-react';
 import imgMulher from '/images/profissional-mulher.jpg';
 import imgHomem from '/images/profissional-homem.jpg';
 
@@ -184,13 +184,13 @@ const Hero = () => {
           </div>
 
           <div className="lg:col-span-2 hidden lg:block">
-            <div className="relative h-[600px] flex items-center justify-center">
+            <div className="relative h-[700px] flex items-center justify-center">
               
               <div className="relative w-full h-full flex items-center justify-center">
                 
-                <div className="absolute left-0 z-10">
+                <div className="absolute left-4 z-10">
                   <div className="relative">
-                    <div className="w-48 h-64 rounded-2xl border-4 border-purple-500/30 shadow-2xl overflow-hidden bg-gray-900">
+                    <div className="w-64 h-96 rounded-2xl shadow-2xl overflow-hidden">
                       <img 
                         src={imgMulher}
                         alt="Profissional Executiva" 
@@ -204,9 +204,9 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="absolute right-0 z-20">
+                <div className="absolute right-4 z-20">
                   <div className="relative">
-                    <div className="w-48 h-64 rounded-2xl border-4 border-blue-500/30 shadow-2xl overflow-hidden bg-gray-900">
+                    <div className="w-64 h-96 rounded-2xl shadow-2xl overflow-hidden">
                       <img 
                         src={imgHomem}
                         alt="Empreendedor Tech" 
@@ -220,14 +220,24 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce animation-delay-4000">
+                <div className="absolute top-20 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce animation-delay-4000">
                   <Zap className="w-3 h-3 inline mr-1" />
                   IA Generativa
                 </div>
 
-                <div className="absolute bottom-16 left-1/3 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
-                  <TrendingUp className="w-3 h-3 inline mr-1" />
-                  80% Eficiente
+                <div className="absolute top-40 left-1/4 bg-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
+                  <Brain className="w-3 h-3 inline mr-1" />
+                  Prompt Engineering
+                </div>
+
+                <div className="absolute bottom-32 right-1/4 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce animation-delay-2000">
+                  <Briefcase className="w-3 h-3 inline mr-1" />
+                  Business AI
+                </div>
+                
+                <div className="absolute bottom-20 left-1/3 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce animation-delay-4000">
+                  <Users className="w-3 h-3 inline mr-1" />
+                  Agentes AI
                 </div>
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
