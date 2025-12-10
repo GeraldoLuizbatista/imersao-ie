@@ -181,13 +181,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* FOTOS - DESCOMENTADAS E FUNCIONANDO */}
           <div className="lg:col-span-2 hidden lg:block">
             <div className="relative h-[600px] flex items-center justify-center">
               
               <div className="relative w-full h-full flex items-center justify-center">
                 
-                {/* Foto Mulher Executiva */}
                 <div className="absolute left-0 z-10">
                   <div className="relative">
                     <div className="w-48 h-64 rounded-2xl border-4 border-purple-500/30 shadow-2xl overflow-hidden bg-gray-900">
@@ -204,7 +202,6 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* Foto Homem Empreendedor */}
                 <div className="absolute right-0 z-20">
                   <div className="relative">
                     <div className="w-48 h-64 rounded-2xl border-4 border-blue-500/30 shadow-2xl overflow-hidden bg-gray-900">
@@ -266,4 +263,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;git add src/components/Hero.jsx
+export default Hero;
