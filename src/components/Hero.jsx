@@ -238,9 +238,7 @@ const Hero = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-full blur-3xl -z-10"></div>
               </div>
             </div>
-          </div>
-        </div>
-
+        
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2">
             <p className="text-xs text-gray-400">Experiência:</p>
