@@ -190,7 +190,7 @@ const Hero = () => {
                   <div className="relative">
                     <div className="w-48 h-64 rounded-2xl border-4 border-purple-500/30 shadow-2xl overflow-hidden bg-gray-900">
                       <img 
-                        src="/images/profissional-mulher.jpg" 
+                        src="imersao-ie/images/profissional-mulher.jpg" 
                         alt="Profissional Executiva" 
                         className="w-full h-full object-cover"
                       />
@@ -206,7 +206,7 @@ const Hero = () => {
                   <div className="relative">
                     <div className="w-48 h-64 rounded-2xl border-4 border-blue-500/30 shadow-2xl overflow-hidden bg-gray-900">
                       <img 
-                        src="/images/profissional-homem.jpg" 
+                        src="imersao-ie/images/profissional-homem.jpg" 
                         alt="Empreendedor Tech" 
                         className="w-full h-full object-cover"
                       />
