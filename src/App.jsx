@@ -15,6 +15,8 @@ import Guarantee from './components/Guarantee';
 import FinalCTA from './components/FinalCTA';
 import FloatingCTA from './components/FloatingCTA';
 import CountdownTimer from './components/CountdownTimer';
+import WhyUberlandia from './components/WhyUberlandia';
+
 
 function App() {
   const [showFloatingCTA, setShowFloatingCTA] = useState(false);
@@ -49,6 +51,7 @@ function App() {
       <FAQ />
       <Guarantee />
       <FinalCTA />
+      <WhyUberlandia/>
       
       {showFloatingCTA && <FloatingCTA />}
     </div>
