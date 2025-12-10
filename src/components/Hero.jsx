@@ -187,58 +187,57 @@ const Hero = () => {
             <div className="relative h-[700px] flex items-center justify-center">
               
               <div className="flex items-center justify-center gap-6">
-                  
                 <div className="relative">
-                    <img 
-                        src={imgMulher}
-                        alt="Profissional Executiva" 
-                        className="w-64 h-96 object-cover rounded-2xl shadow-2xl"
-                      />
-                    </div>
-
+                  <img 
+                    src={imgMulher}
+                    alt="Profissional Executiva" 
+                    className="w-64 h-96 object-cover rounded-2xl shadow-2xl"
+                  />
+                </div>
                 <div className="relative">
-                    <img 
-                        src={imgHomem}
-                        alt="Empreendedor Tech" 
-                        className="w-64 h-96 object-cover rounded-2xl shadow-2xl"
-                      />
-                    </div>
-                  </div>
-              
-                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce">
-                  <Zap className="w-4 h-4 inline mr-1" />
-                  IA Generativa
+                  <img 
+                    src={imgHomem}
+                    alt="Empreendedor Tech" 
+                    className="w-64 h-96 object-cover rounded-2xl shadow-2xl"
+                  />
                 </div>
-
-                <div className="absolute top-24 left-12 bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-2000">
-                  <Brain className="w-4 h-4 inline mr-1" />
-                  Prompt Engineering
-                </div>
-
-                <div className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-4000">
-                  <Sparkles className="w-4 h-4 inline mr-1" />
-                  Liderança
-                </div>
-                    
-                <div className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce">
-                  <Rocket className="w-4 h-4 inline mr-1" />
-                  Inovação
-                </div>
-             
-                <div className="absolute bottom-24 right-12 bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-2000">
-                  <Briefcase className="w-4 h-4 inline mr-1" />
-                  Business AI
-                </div>
-                
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-4000">
-                  <Users className="w-4 h-4 inline mr-1" />
-                  Agentes AI
-                </div>
-
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-full blur-3xl -z-10"></div>
               </div>
+              
+              <div className="absolute top-8 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce">
+                <Zap className="w-4 h-4 inline mr-1" />
+                IA Generativa
+              </div>
+              
+              <div className="absolute top-24 left-12 bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-2000">
+                <Brain className="w-4 h-4 inline mr-1" />
+                Prompt Engineering
+              </div>
+              
+              <div className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-4000">
+                <Sparkles className="w-4 h-4 inline mr-1" />
+                Liderança
+              </div>
+              
+              <div className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce">
+                <Rocket className="w-4 h-4 inline mr-1" />
+                Inovação
+              </div>
+              
+              <div className="absolute bottom-24 right-12 bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-2000">
+                <Briefcase className="w-4 h-4 inline mr-1" />
+                Business AI
+              </div>
+              
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce animation-delay-4000">
+                <Users className="w-4 h-4 inline mr-1" />
+                Agentes AI
+              </div>
+              
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-full blur-3xl -z-10"></div>
             </div>
-        
+          </div>
+        </div>
+
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2">
             <p className="text-xs text-gray-400">Experiência:</p>
