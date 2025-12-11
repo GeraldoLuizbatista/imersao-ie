@@ -41,17 +41,17 @@ function App() {
       <ImpactStats />
       <Problem />
       <Solution />
+      <WhyUberlandia />      
       <Instructors />
+      <Pricing />            
       <Agenda />
       <Results />
       <ForWho />
-      <Pricing />
       <Bonus />
       <Testimonials />
       <FAQ />
       <Guarantee />
       <FinalCTA />
-      <WhyUberlandia/>
       
       {showFloatingCTA && <FloatingCTA />}
     </div>
